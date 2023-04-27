@@ -1,0 +1,25 @@
+.display {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #464545;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.display__textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  background-color: #111111;
+  color: #43f62f;
+  font-size: 14px;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 400;
+  padding: 20px;
+  border: 2px solid #fff;
+
+  &:focus {
+    outline: none;
+  }
+}
