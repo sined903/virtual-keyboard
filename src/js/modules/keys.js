@@ -181,6 +181,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_back',
+      changeText: true,
+      text: 'BACKSPACE',
     },
     {
       key: 'Home',
@@ -194,6 +196,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_grey',
+      changeText: true,
+      text: 'Home',
     },
     {
       key: 'Tab',
@@ -207,6 +211,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_tab',
+      changeText: true,
+      text: 'TAB',
     },
     {
       key: 'q',
@@ -389,6 +395,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_grey',
+      changeText: true,
+      text: 'End',
     },
     {
       key: 'CapsLock',
@@ -402,6 +410,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_caps',
+      changeText: true,
+      text: 'CAPS LOCK',
     },
     {
       key: 'a',
@@ -558,6 +568,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_enter',
+      changeText: true,
+      text: 'ENTER',
     },
     {
       key: 'Insert',
@@ -571,6 +583,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_grey',
+      changeText: true,
+      text: 'Insert',
     },
     {
       key: 'Shift',
@@ -584,6 +598,8 @@ const keys = {
       shiftKey: true,
       repeat: false,
       class: 'keyboard__button keyboard__button_lshift',
+      changeText: true,
+      text: 'SHIFT',
     },
     {
       key: 'z',
@@ -727,6 +743,8 @@ const keys = {
       shiftKey: true,
       repeat: false,
       class: 'keyboard__button keyboard__button_caps',
+      changeText: true,
+      text: 'SHIFT',
     },
     {
       key: 'ArrowUp',
@@ -740,6 +758,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_arrup',
+      changeText: true,
+      text: '⟶',
     },
     {
       key: 'Delete',
@@ -753,6 +773,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_grey',
+      changeText: true,
+      text: 'Del',
     },
     {
       key: 'Control',
@@ -766,6 +788,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_lctrl',
+      changeText: true,
+      text: 'CTRL',
     },
     {
       key: 'Meta',
@@ -779,6 +803,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_win',
+      changeText: true,
+      text: 'WIN',
     },
     {
       key: 'Alt',
@@ -792,6 +818,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_ralt',
+      changeText: true,
+      text: 'ALT',
     },
     {
       key: ' ',
@@ -818,6 +846,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_ralt',
+      changeText: true,
+      text: 'ALT',
     },
     {
       key: 'Meta',
@@ -831,6 +861,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_rwin',
+      changeText: true,
+      text: 'WIN',
     },
     {
       key: 'Control',
@@ -844,6 +876,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_rctrl',
+      changeText: true,
+      text: 'CTRL',
     },
     {
       key: 'ArrowLeft',
@@ -857,6 +891,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_left',
+      changeText: true,
+      text: '⟵',
     },
     {
       key: 'ArrowDown',
@@ -870,6 +906,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_down',
+      changeText: true,
+      text: '⟶',
     },
     {
       key: 'ArrowRight',
@@ -883,6 +921,8 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_right',
+      changeText: true,
+      text: '⟶',
     },
   ],
 };
