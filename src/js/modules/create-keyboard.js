@@ -1,7 +1,7 @@
 const createKeyboard = (keys) => {
   const keyboard = document.querySelector('.keyboard__container');
 
-  keys.en.forEach((element) => {
+  keys.forEach((element) => {
     const button = document.createElement('button');
     button.className = element.class;
 
@@ -22,4 +22,5 @@ const createKeyboard = (keys) => {
     keyboard.append(button);
   });
 };
+
 export default createKeyboard;
