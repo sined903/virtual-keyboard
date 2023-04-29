@@ -1,4 +1,4 @@
-const createKeyboard = (keys) => {
+const createKeyboard = (keys, mode) => {
   const keyboard = document.querySelector('.keyboard__container');
 
   keys.forEach((element) => {
@@ -10,11 +10,15 @@ const createKeyboard = (keys) => {
     btnMask.className = 'keyboard__mask';
     symb.className = 'keyboard__symbol';
     button.dataset.code = element.code;
+
     if (element.changeText) {
       symb.textContent = element.text;
+    } else if (mode === 'shift' && element.shiftMode !== undefined) {
+      symb.textContent = element.shiftMode;
+    } else if (mode === 'shift' || mode === 'caps') {
+      symb.textContent = element.key.toUpperCase();
     } else {
       symb.textContent = element.key;
-      button.dataset.entry = element.code;
     }
 
     button.append(symb);

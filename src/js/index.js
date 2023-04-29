@@ -23,3 +23,5 @@ createKeyboard(keys[checkLanguage()]);
 const btnEvents = new BtnEvents();
 btnEvents.physicalKeyPress();
 btnEvents.changeLang();
+btnEvents.showShiftKeys();
+btnEvents.capsPress();

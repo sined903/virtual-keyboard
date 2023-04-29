@@ -12,6 +12,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '~',
     },
     {
       key: '1',
@@ -25,6 +26,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '!',
     },
     {
       key: '2',
@@ -38,6 +40,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '@',
     },
     {
       key: '3',
@@ -51,6 +54,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '#',
     },
     {
       key: '4',
@@ -64,6 +68,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '$',
     },
     {
       key: '5',
@@ -77,6 +82,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '%',
     },
     {
       key: '6',
@@ -90,6 +96,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '^',
     },
     {
       key: '7',
@@ -103,6 +110,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '&',
     },
     {
       key: '8',
@@ -116,6 +124,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '*',
     },
     {
       key: '9',
@@ -129,6 +138,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '(',
     },
     {
       key: '0',
@@ -142,6 +152,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: ')',
     },
     {
       key: '-',
@@ -155,6 +166,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '_',
     },
     {
       key: '=',
@@ -168,6 +180,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '+',
     },
     {
       key: 'Backspace',
@@ -356,6 +369,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '{',
     },
     {
       key: ']',
@@ -369,6 +383,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '}',
     },
     {
       key: '\\',
@@ -382,6 +397,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button keyboard__button_tab',
+      shiftMode: '|',
     },
     {
       key: 'End',
@@ -542,6 +558,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: ':',
     },
     {
       key: ';',
@@ -555,6 +572,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '"',
     },
     {
       key: 'Enter',
@@ -704,6 +722,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '<',
     },
     {
       key: '.',
@@ -717,6 +736,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '>',
     },
     {
       key: '/',
@@ -730,6 +750,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '?',
     },
     {
       key: 'Shift',
@@ -951,6 +972,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '!',
     },
     {
       key: '2',
@@ -964,6 +986,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '"',
     },
     {
       key: '3',
@@ -977,6 +1000,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '№',
     },
     {
       key: '4',
@@ -990,6 +1014,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: ';',
     },
     {
       key: '5',
@@ -1016,6 +1041,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: ':',
     },
     {
       key: '7',
@@ -1029,6 +1055,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '?',
     },
     {
       key: '8',
@@ -1042,6 +1069,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '*',
     },
     {
       key: '9',
@@ -1055,6 +1083,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '(',
     },
     {
       key: '0',
@@ -1068,6 +1097,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: ')',
     },
     {
       key: '-',
@@ -1081,6 +1111,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '_',
     },
     {
       key: '=',
@@ -1094,6 +1125,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: '+',
     },
     {
       key: 'Backspace',
@@ -1656,6 +1688,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      shiftMode: ',',
     },
     {
       key: 'Shift',

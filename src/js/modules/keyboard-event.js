@@ -9,20 +9,30 @@ class BtnEvents {
     this.storage = window.localStorage;
   }
 
+  addPressAnimation(code) {
+    this.btns = document.querySelectorAll('.keyboard__button');
+    this.btns.forEach((element) => {
+      if (element.dataset.code === code) {
+        element.classList.add('keyboard__button_animation');
+      }
+    });
+  }
+
+  removePressAnimation() {
+    this.btns = document.querySelectorAll('.keyboard__button');
+    this.btns.forEach((element) => {
+      element.classList.remove('keyboard__button_animation');
+    });
+  }
+
   physicalKeyPress() {
     document.addEventListener('keydown', (event) => {
       this.display.focus();
-      this.btns.forEach((element) => {
-        if (element.dataset.code === event.code) {
-          element.classList.add('keyboard__button_animation');
-        }
-      });
+      this.addPressAnimation(event.code);
+    });
 
-      document.addEventListener('keyup', () => {
-        this.btns.forEach((element) => {
-          element.classList.remove('keyboard__button_animation');
-        });
-      });
+    document.addEventListener('keyup', () => {
+      this.removePressAnimation();
     });
   }
 
@@ -33,11 +43,49 @@ class BtnEvents {
           this.storage.setItem('lang', 'ru');
           this.keyboard.innerHTML = '';
           createKeyboard(keys[this.storage.lang]);
+          this.addPressAnimation(event.code);
         } else if (this.storage.lang === 'ru') {
           this.storage.setItem('lang', 'en');
           this.keyboard.innerHTML = '';
           createKeyboard(keys[this.storage.lang]);
+          this.addPressAnimation(event.code);
         }
+      }
+    });
+  }
+
+  showShiftKeys() {
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Shift') {
+        this.keyboard.innerHTML = '';
+        createKeyboard(keys[this.storage.lang], 'shift');
+        this.addPressAnimation(event.code);
+      }
+    });
+
+    document.addEventListener('keyup', (event) => {
+      if (event.key === 'Shift') {
+        this.keyboard.innerHTML = '';
+        createKeyboard(keys[this.storage.lang]);
+        this.removePressAnimation();
+      }
+    });
+  }
+
+  capsPress() {
+    let isCapsPress = false;
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'CapsLock' && isCapsPress === false) {
+        isCapsPress = true;
+        this.keyboard.innerHTML = '';
+        createKeyboard(keys[this.storage.lang], 'caps');
+        this.addPressAnimation(event.code);
+      } else if (event.key === 'CapsLock' && isCapsPress === true) {
+        isCapsPress = false;
+        this.keyboard.innerHTML = '';
+        createKeyboard(keys[this.storage.lang]);
+        this.removePressAnimation();
       }
     });
   }
