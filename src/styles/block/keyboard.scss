@@ -1,0 +1,195 @@
+.keyboard {
+
+
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.092) 0%, rgba(236, 236, 236, 0.2) 82.29%), #ECECEC;
+  border-radius: 10px 10px 20px 20px;
+  padding: 48px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.118) 0%, rgba(219, 219, 219, 0.2) 100%), #DBDBDB;
+    border-radius: 0 0 20px 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.25) 39.06%, rgba(255, 255, 255, 0) 56.77%);
+    border-radius: 10px 0px 0px 20px;
+  }
+}
+
+.keyboard__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #000000;
+}
+
+.keyboard__button {
+  position: relative;
+  cursor: pointer;
+  width: 69px;
+  height: 69px;
+  background-image: url('../assets/key.png');
+  background-position: center center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s linear;
+}
+
+.keyboard__mask {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.keyboard__button_animation {
+  animation-name: press;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.keyboard__button_animation-click {
+  animation-name: press;
+  animation-duration: 0.3s;
+}
+
+.keyboard__button_grey {
+  background-image: url('../assets/grey.png')
+}
+
+.keyboard__button_arrup,
+.keyboard__button_right,
+.keyboard__button_left,
+.keyboard__button_down {
+  background-image: url('../assets/arrow.png');
+}
+
+.keyboard__button_lctrl{
+  background-image: url('../assets/left-ctrl.png');
+  width: 86px;
+}
+
+.keyboard__button_rctrl{
+  background-image: url('../assets/right-ctrl.png');
+}
+
+.keyboard__button_win{
+  background-image: url('../assets/win.png');
+  width: 85px;
+}
+
+.keyboard__button_rwin{
+  background-image: url('../assets/right-win.png');
+}
+
+.keyboard__button_lalt{
+  background-image: url('../assets/left-alt.png');
+  width: 85px;
+}
+
+.keyboard__button_ralt{
+  background-image: url('../assets/right-alt.png');
+}
+
+.keyboard__button_space{
+  background-image: url('../assets/space.png');
+  width: 449px;
+}
+
+.keyboard__button_back {
+  width: 136px;
+  background-image: url('../assets/key-long.png');
+}
+
+.keyboard__button_tab {
+  width: 102px;
+  background-image: url('../assets/key-short.png');
+}
+
+.keyboard__button_caps {
+  width: 119px;
+  background-image: url('../assets/caps.png');
+}
+
+.keyboard__button_enter {
+  width: 157px;
+  background-image: url('../assets/enter.png');
+}
+
+.keyboard__button_lshift {
+  width: 157px;
+  background-image: url('../assets/left-shift.png');
+}
+
+.keyboard__symbol {
+  font-family: 'Helvetica Rounded LT Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 20px;
+  
+  color: #629990;
+  
+  text-shadow: 0px 0px 10px rgba(119, 119, 119, 0.25);
+}
+
+.keyboard__button_back .keyboard__symbol, 
+.keyboard__button_tab .keyboard__symbol,
+.keyboard__button_caps .keyboard__symbol,
+.keyboard__button_lshift .keyboard__symbol,
+.keyboard__button_lctrl .keyboard__symbol,
+.keyboard__button_rctrl .keyboard__symbol,
+.keyboard__button_win .keyboard__symbol,
+.keyboard__button_rwin .keyboard__symbol,
+.keyboard__button_lalt .keyboard__symbol,
+.keyboard__button_ralt .keyboard__symbol,
+.keyboard__button_grey .keyboard__symbol,
+.keyboard__button_enter .keyboard__symbol {
+  font-family: 'Helvetica Rounded LT Std';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 0px 10px rgba(119, 119, 119, 0.25);
+}
+
+.keyboard__button_down  .keyboard__symbol {
+  transform: rotate(90deg);
+}
+
+.keyboard__button_arrup  .keyboard__symbol {
+  transform: rotate(270deg);
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.93);
+  }
+}
