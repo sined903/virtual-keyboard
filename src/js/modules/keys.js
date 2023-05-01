@@ -239,6 +239,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'w',
@@ -252,6 +253,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'e',
@@ -265,6 +267,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'r',
@@ -278,6 +281,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 't',
@@ -291,6 +295,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'y',
@@ -304,6 +309,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'u',
@@ -317,6 +323,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'i',
@@ -330,6 +337,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'o',
@@ -343,6 +351,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'p',
@@ -356,6 +365,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: '[',
@@ -441,6 +451,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 's',
@@ -454,6 +465,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'd',
@@ -467,6 +479,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'f',
@@ -480,6 +493,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'g',
@@ -493,6 +507,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'h',
@@ -506,6 +521,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'j',
@@ -532,6 +548,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'l',
@@ -545,6 +562,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: ';',
@@ -631,6 +649,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'x',
@@ -644,6 +663,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'c',
@@ -657,6 +677,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'v',
@@ -670,6 +691,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'b',
@@ -683,6 +705,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'n',
@@ -696,6 +719,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'm',
@@ -709,6 +733,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: ',',
@@ -793,7 +818,7 @@ const keys = {
       metaKey: false,
       shiftKey: false,
       repeat: false,
-      class: 'keyboard__button keyboard__button_grey',
+      class: 'keyboard__button keyboard__button_grey keyboard__button_del',
       changeText: true,
       text: 'Del',
     },
@@ -959,6 +984,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: '1',
@@ -1184,6 +1210,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'ц',
@@ -1197,6 +1224,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'у',
@@ -1210,6 +1238,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'к',
@@ -1223,6 +1252,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'е',
@@ -1236,6 +1266,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'н',
@@ -1249,6 +1280,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'г',
@@ -1262,6 +1294,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'ш',
@@ -1275,6 +1308,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'щ',
@@ -1288,6 +1322,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'з',
@@ -1301,6 +1336,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'х',
@@ -1314,6 +1350,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'ъ',
@@ -1327,6 +1364,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: '\\',
@@ -1383,6 +1421,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'ы',
@@ -1396,6 +1435,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'в',
@@ -1409,6 +1449,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'а',
@@ -1422,6 +1463,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'п',
@@ -1435,6 +1477,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'р',
@@ -1448,6 +1491,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'о',
@@ -1461,6 +1505,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'л',
@@ -1474,6 +1519,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'д',
@@ -1487,6 +1533,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'ж',
@@ -1500,6 +1547,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'э',
@@ -1513,6 +1561,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'Enter',
@@ -1571,6 +1620,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'ч',
@@ -1584,6 +1634,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'с',
@@ -1597,6 +1648,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'м',
@@ -1610,6 +1662,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'и',
@@ -1623,6 +1676,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'т',
@@ -1636,6 +1690,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'ь',
@@ -1649,6 +1704,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'б',
@@ -1662,6 +1718,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: 'ю',
@@ -1675,6 +1732,7 @@ const keys = {
       shiftKey: false,
       repeat: false,
       class: 'keyboard__button',
+      type: 'letter',
     },
     {
       key: '.',
@@ -1731,7 +1789,7 @@ const keys = {
       metaKey: false,
       shiftKey: false,
       repeat: false,
-      class: 'keyboard__button keyboard__button_grey',
+      class: 'keyboard__button keyboard__button_grey keyboard__button_del',
       changeText: true,
       text: 'Del',
     },

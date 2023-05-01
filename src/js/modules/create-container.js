@@ -8,6 +8,10 @@ const createContainers = () => {
   const display = document.createElement('div');
   display.className = 'display';
 
+  const message = document.createElement('div');
+  message.className = 'message';
+  message.innerHTML = 'Клавиатура создана в операционной системе Windows.\n Для переключения языка комбинация: левыe ctrl + alt';
+
   const keyboard = document.createElement('div');
   keyboard.className = 'keyboard';
 
@@ -23,6 +27,7 @@ const createContainers = () => {
   display.append(displayText);
   keyboard.append(keyboardContainer);
   container.append(keyboard);
+  container.append(message);
 };
 
 export default createContainers;

@@ -7,6 +7,53 @@ class BtnEvents {
     this.keyboard = document.querySelector('.keyboard__container');
     this.btns = document.querySelectorAll('.keyboard__button');
     this.storage = window.localStorage;
+    this.isCapsPress = false;
+  }
+
+  letterToUpperCase() {
+    this.btns.forEach((item) => {
+      const letter = item.firstChild;
+      const dataEntry = item.dataset;
+
+      if (item.dataset.type) {
+        letter.textContent = item.dataset.entry.toUpperCase();
+        dataEntry.entry = letter.textContent.toUpperCase();
+      }
+    });
+  }
+
+  letterToLowerCase() {
+    this.btns.forEach((item) => {
+      const letter = item.firstChild;
+      const dataEntry = item.dataset;
+
+      if (item.dataset.type) {
+        letter.textContent = item.dataset.entry.toLowerCase();
+        dataEntry.entry = letter.textContent.toLowerCase();
+      }
+    });
+  }
+
+  showHideShiftKeys() {
+    this.btns.forEach((element) => {
+      const currentSymbol = element.firstChild.innerHTML;
+      const symb = element.firstChild;
+      const dataElement = element.dataset;
+
+      if (element.dataset.shift) {
+        symb.textContent = element.dataset.shift.toString();
+        dataElement.entry = symb.textContent.toString();
+        dataElement.shift = currentSymbol.toString();
+      }
+
+      if (symb.textContent === '&amp;') {
+        symb.textContent = '&';
+      } else if (symb.textContent === '&lt;') {
+        symb.textContent = ',';
+      } else if (symb.textContent === '&gt;') {
+        symb.textContent = '.';
+      }
+    });
   }
 
   addPressAnimation(code) {
@@ -54,39 +101,135 @@ class BtnEvents {
     });
   }
 
-  showShiftKeys() {
+  pressShiftKeys() {
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Shift') {
-        this.keyboard.innerHTML = '';
-        createKeyboard(keys[this.storage.lang], 'shift');
+        this.showHideShiftKeys();
+        if (this.isCapsPress) {
+          this.letterToLowerCase();
+        } else {
+          this.letterToUpperCase();
+        }
         this.addPressAnimation(event.code);
       }
     });
 
     document.addEventListener('keyup', (event) => {
       if (event.key === 'Shift') {
-        this.keyboard.innerHTML = '';
-        createKeyboard(keys[this.storage.lang]);
+        this.showHideShiftKeys();
+        if (this.isCapsPress) {
+          this.letterToUpperCase();
+        } else {
+          this.letterToLowerCase();
+        }
+
         this.removePressAnimation();
       }
     });
   }
 
   capsPress() {
-    let isCapsPress = false;
-
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'CapsLock' && isCapsPress === false) {
-        isCapsPress = true;
-        this.keyboard.innerHTML = '';
-        createKeyboard(keys[this.storage.lang], 'caps');
+      if (event.key === 'CapsLock' && this.isCapsPress === false) {
+        this.isCapsPress = true;
+        this.letterToUpperCase();
         this.addPressAnimation(event.code);
-      } else if (event.key === 'CapsLock' && isCapsPress === true) {
-        isCapsPress = false;
-        this.keyboard.innerHTML = '';
-        createKeyboard(keys[this.storage.lang]);
+      } else if (event.key === 'CapsLock' && this.isCapsPress === true) {
+        this.isCapsPress = false;
+        this.letterToLowerCase();
         this.removePressAnimation();
       }
+    });
+  }
+
+  clickKeyboard() {
+    let currentClick;
+
+    this.keyboard.addEventListener('mousedown', (event) => {
+      const btn = event.target;
+      currentClick = event.target;
+      if (btn.classList.contains('keyboard__mask')) {
+        this.addPressAnimation(btn.closest('button').dataset.code);
+
+        if (btn.closest('button').dataset.entry !== undefined) {
+          this.display.value += btn.closest('button').dataset.entry;
+        }
+      }
+    });
+
+    this.keyboard.addEventListener('mouseup', (event) => {
+      if (event.target === currentClick) {
+        this.removePressAnimation();
+      }
+    });
+  }
+
+  clickCaps() {
+    const capsBtn = document.querySelector('.keyboard__button_caps').lastChild;
+
+    capsBtn.addEventListener('mousedown', () => {
+      if (this.isCapsPress === false) {
+        this.isCapsPress = true;
+        this.letterToUpperCase();
+        this.addPressAnimation('CapsLock');
+      } else if (this.isCapsPress === true) {
+        this.isCapsPress = false;
+        this.letterToLowerCase();
+        this.addPressAnimation('CapsLock');
+      }
+    });
+
+    capsBtn.addEventListener('mouseup', () => {
+      this.removePressAnimation();
+    });
+  }
+
+  clickShiftKey() {
+    const shiftBtn = document.querySelector('.keyboard__button_lshift');
+
+    shiftBtn.addEventListener('mousedown', () => {
+      if (this.isCapsPress) {
+        this.letterToLowerCase();
+      } else {
+        this.letterToUpperCase();
+      }
+
+      this.showHideShiftKeys();
+      this.addPressAnimation('ShiftLeft');
+    });
+
+    shiftBtn.addEventListener('mouseup', () => {
+      if (this.isCapsPress) {
+        this.letterToUpperCase();
+      } else {
+        this.letterToLowerCase();
+      }
+      this.showHideShiftKeys();
+      this.removePressAnimation();
+    });
+  }
+
+  enterclick() {
+    const enter = document.querySelector('.keyboard__button_enter');
+
+    enter.addEventListener('mousedown', () => {
+      this.display.value += '\n';
+    });
+  }
+
+  backspaceClick() {
+    const back = document.querySelector('.keyboard__button_back');
+
+    back.addEventListener('click', () => {
+      this.display.value = this.display.value.slice(0, -1);
+    });
+  }
+
+  delClick() {
+    const back = document.querySelector('.keyboard__button_del');
+
+    back.addEventListener('click', () => {
+      this.display.value = this.display.value.slice(0, -1);
     });
   }
 }
